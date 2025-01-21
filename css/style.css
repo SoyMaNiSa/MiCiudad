@@ -1,0 +1,191 @@
+body {
+    font-family: poppins, sans-serif;
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+#hero {
+    background-image: url('../images/avellaneda.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+
+.avellaneda {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2);
+    font-weight: 500;
+}
+
+.pba {
+    background: rgba(7, 145, 25, 0.9);
+    padding: 20px 20px;
+    margin: 0 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.3);
+    font-weight: 400;
+}
+
+.avellaneda:hover {
+    background: linear-gradient(90deg, green, blue, red, yellow);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#atracciones {
+    margin-top: 50px;
+    color: black;
+    height: 700px;
+}
+
+.todas {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.atraccion {
+    width: 300px;
+    padding: 30px 40px;
+    margin: 30px 30px;
+    font-weight: 500;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.atr {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.atraccion:hover {
+    box-shadow: 0px 30px 35px rgba(0, 0, 0, 0.2);
+    border: 2px solid white;
+    transition: 0.2s;
+    cursor: pointer;
+    color: rgba(7, 145, 25);
+}
+
+#estas {
+    color: rgba(7, 145, 25);
+}
+
+#contacto {
+    height: 300px;
+}
+
+.card {
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #ffffff;
+    color: #2b2839;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-size {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.border-blue {
+    border: 1px dotted rgb(255, 255, 255);
+}
+
+.text {
+    text-align: left;
+}
+
+.card:hover .text {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.card:hover .image-size {
+    transform: rotateY(180deg);
+}
+
+footer {
+    background-color: #2b2839;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 100px;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: rgba(7, 145, 25);
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.card:hover {
+    background: linear-gradient(270deg, #ff7e5f, #feb47b, #86a8e7, #91eae4, #f3a683, #f7d794, #778beb, #e77f67);
+    background-size: 400% 400%;
+    animation: gradientBackground 2s ease infinite;
+}
+
+@media (min-width: 769px) {
+    .card {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 15px;
+    }
+}
